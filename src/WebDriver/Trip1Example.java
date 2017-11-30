@@ -20,7 +20,7 @@ public class Trip1Example {
     
     System.out.println("This is Trip Plan Project program");
     
-    //To land on the transportnsw.info page
+    //To land on the transportnsw.info#trip page
 	driver.navigate().to("https://transportnsw.info/trip");
 	
     //Search for From Location
