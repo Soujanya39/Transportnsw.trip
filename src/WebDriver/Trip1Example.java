@@ -30,6 +30,8 @@ public class Trip1Example {
     
     //ImplicitWait(driver);
     
+    Thread.sleep(3000);
+    
     //To click on the Go Button for Results
     driver.findElement(By.xpath("//*[@id='search-button']")).click();
     
