@@ -37,7 +37,7 @@ public class Trip1Example {
     
     	driver.close();
     	
-    	System.out.println("Results shown:");
+    	System.out.println("Results shown will be displayed here:");
     
 	}
 
