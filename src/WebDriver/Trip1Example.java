@@ -2,12 +2,14 @@ package WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class Trip1Example {
+
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -35,11 +37,21 @@ public class Trip1Example {
     //To click on the Go Button for Results
     driver.findElement(By.xpath("//*[@id='search-button']")).click();
     
-    Thread.sleep(3000);
+    Thread.sleep(7000);
     
     	driver.close();
     	
-    	System.out.println("Results shown will be displayed in console if i write a code to fetch data from web page ");
+    	System.out.println("Navigation Results shown will be displayed below: ");
+    	
+    	//this is my code for fetching the results from web page to console their are few errors trying to resolve it
+    	//Using WebElement i can fetch the data from web page to console output. 
+    	// since it is a dynamic data trying out different ways to fetch data from web page
+    	
+    //WebElement element= driver.findElement(By.xpath("//*[@id='tripAnchor0']/div[1]/div/div[1]"));
+    	
+    //System.out.println("Trip 1 results are displayed below:");
+    	
+    //System.out.println(element.getText());
     
 	}
 
@@ -47,4 +59,6 @@ public class Trip1Example {
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
+
+
 }
