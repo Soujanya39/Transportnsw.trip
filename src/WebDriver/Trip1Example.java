@@ -39,7 +39,7 @@ public class Trip1Example {
     
     	driver.close();
     	
-    	System.out.println("Results shown will be displayed ");
+    	System.out.println("Results shown will be displayed in console if i write a code to fetch data from web page ");
     
 	}
 
