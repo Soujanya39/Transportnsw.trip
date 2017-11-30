@@ -1,0 +1,24 @@
+package WebDriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class EWSubsPage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
+		
+	    WebDriver driver = new ChromeDriver();
+	    
+		driver.get("https://subscription.ew.com/storefront/subscribe-to-entertainment-weekly/site/ew-respppe0216-tpl.html");
+		
+		driver.manage().window().maximize();
+		
+		
+		
+		
+
+	}
+
+}
