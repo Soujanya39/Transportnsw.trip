@@ -23,24 +23,24 @@ public class Trip1Example {
 	driver.navigate().to("https://transportnsw.info/trip");
 	
     //Search for From Location
-    driver.findElement(By.xpath("//*[@id='search-input-From']")).sendKeys("Town Hall Station, Sydney");
+    driver.findElement(By.xpath("//*[@id='search-input-From']")).sendKeys("North Sydney Station, North Sydney");
     
     
     //Search for To Location Town Hall Station, Sydney   North Sydney Station, North Sydney
-    driver.findElement(By.xpath("//*[@id='search-input-To']")).sendKeys("Rodes");
+    driver.findElement(By.xpath("//*[@id='search-input-To']")).sendKeys("Town Hall Station, Sydney");
     
     //ImplicitWait(driver);
     
-    Thread.sleep(3000);
+    Thread.sleep(1000);
     
     //To click on the Go Button for Results
     driver.findElement(By.xpath("//*[@id='search-button']")).click();
     
-    Thread.sleep(7000);
+    Thread.sleep(1000);
     
     System.out.print("\n");
     	
-    	System.out.println( "Navigation Results shown will be displayed below: ");
+    	System.out.println( "******Navigation Results******* ");
     	
     	System.out.print("\n");
     	
@@ -64,7 +64,7 @@ public class Trip1Example {
     System.out.println("End time of next train : " + data3);
     
     String data1= driver.findElement(By.xpath(".//*[@id='tripAnchor0']/div[1]/div/div[1]/real-time-departure/div/span[2]")).getText();
-    System.out.println("Next train will leave in: " + data1 +""+  "minitues");   
+    System.out.println("Next train will leave in: " + data1 +" "+  "minitues");   
     
     String data4 = driver.findElement(By.xpath(".//*[@id='tripAnchor0']/div/div/div[2]/div[2]/trip-fare-summary/div/div/object/button")).getText();
     System.out.println("Fare of this trip is: " + data4);
@@ -86,10 +86,50 @@ public class Trip1Example {
     System.out.println("End time of next train : " + data7);
 
     String data8= driver.findElement(By.xpath(".//*[@id='tripAnchor1']/div/div/div[1]/real-time-departure/div/span[2]")).getText();
-    System.out.println("Next train will leave in: " + data8 +""+  "minitues");   
+    System.out.println("Next train will leave in: " + data8 +" "+  "minitues");   
 
     String data9 = driver.findElement(By.xpath(".//*[@id='tripAnchor1']/div/div/div[2]/div[2]/trip-fare-summary/div/div/object/button")).getText();
     System.out.println("Fare of this trip is: " + data9);
+    
+    // Trip 3 Details
+	System.out.println("Trip 3 result is displayed below:");
+	
+	System.out.print("\n");
+	
+    String data10= driver.findElement(By.xpath(".//*[@id='tripAnchor2']/div[1]/div/div[1]/div[1]/div/ul/li/div/span[2]/span[2]")).getText();
+    System.out.println("Train station : " + data10);
+	
+    String data11= driver.findElement(By.xpath(".//*[@id='tripAnchor2']/div/div/div[1]/div[1]/div/div/span[3]")).getText();
+    System.out.println("Start time of next train : " + data11);
+
+    String data12= driver.findElement(By.xpath(".//*[@id='tripAnchor2']/div/div/div[1]/div[1]/div/div/span[6]")).getText();
+    System.out.println("End time of next train : " + data12);
+
+    String data13= driver.findElement(By.xpath(".//*[@id='tripAnchor2']/div/div/div[1]/real-time-departure/div/span[2]")).getText();
+    System.out.println("Next train will leave in: " + data13 +" "+  "minitues");   
+
+    String data14 = driver.findElement(By.xpath(".//*[@id='tripAnchor2']/div/div/div[2]/div[2]/trip-fare-summary/div/div/object/button")).getText();
+    System.out.println("Fare of this trip is: " + data14);
+    
+    // Trip 4 Details
+	System.out.println("Trip 4 result is displayed below:");
+	
+	System.out.print("\n");
+	
+    String data15= driver.findElement(By.xpath(".//*[@id='tripAnchor3']/div[1]/div/div[1]/div[1]/div/ul/li/div/span[2]/span[2]")).getText();
+    System.out.println("Train station : " + data15);
+	
+    String data16= driver.findElement(By.xpath(".//*[@id='tripAnchor3']/div/div/div[1]/div[1]/div/div/span[3]")).getText();
+    System.out.println("Start time of next train : " + data16);
+
+    String data17= driver.findElement(By.xpath(".//*[@id='tripAnchor3']/div/div/div[1]/div[1]/div/div/span[6]")).getText();
+    System.out.println("End time of next train : " + data17);
+
+    String data18= driver.findElement(By.xpath(".//*[@id='tripAnchor3']/div/div/div[1]/real-time-departure/div/span[2]")).getText();
+    System.out.println("Next train will leave in: " + data18 +" "+  "minitues");   
+
+    String data19 = driver.findElement(By.xpath(".//*[@id='tripAnchor3']/div/div/div[2]/div[2]/trip-fare-summary/div/div/object/button")).getText();
+    System.out.println("Fare of this trip is: " + data19);
     
 	}
 
